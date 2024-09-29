@@ -42,6 +42,18 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+  .about__pic-container {
+    margin: 0 auto 2rem;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-left: 15%;
+    border-radius: 50%; /* Makes the image round */
+    /* width: 275px;
+    height: 275px; */
+    /* margin: auto 0; */
+    
+  }
   .about-containers {
     margin-top: 0;
   }
@@ -101,3 +113,5 @@
     text-align: justify;
   }
 }
+
+
