@@ -3,6 +3,17 @@
     height: 83vh;
     margin-bottom: 6rem;
   }
+  body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-y: auto;   /* Enable vertical scrolling */
+  }
+  body, .section-container {
+    padding: 0; 
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  
   .about-containers {
     flex-wrap: wrap;
   }
@@ -43,12 +54,12 @@
     margin: 0 auto 2rem;
   }
   .about__pic-container {
-    margin: 0 auto 2rem;
+    margin: 0 auto 2rem; /* Ensure it's centered */
+    justify-content: center; /* Centers the image horizontally */
     display: flex;
     height: 400px;
     width: 400px;
-    margin-left: 15%;
-    border-radius: 50%; /* Makes the image round */
+  
     /* width: 275px;
     height: 275px; */
     /* margin: auto 0; */
@@ -59,10 +70,16 @@
   }
 }
 
+
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
     height: 40vh;
+  }
+  body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-y: auto;   /* Enable vertical scrolling */
   }
   #profile {
     height: 83vh;
@@ -101,6 +118,11 @@
   .section__pic-container {
     width: auto;
     height: 46vw;
+    justify-content: center;
+  }
+  .about__pic-container {
+    width: auto;
+    height: 100vw;
     justify-content: center;
   }
   .section__text__p2 {
