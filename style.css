@@ -198,7 +198,7 @@ section {
   }
 
   .about-pic {
-    width: 100%;  /* Make image responsive */
+    width: 75%;  /* Make image responsive */
     max-width: 300px;  /* Ensure it doesn't get too large */
     border-radius: 50%; /* Make the image circular if needed */
   }
